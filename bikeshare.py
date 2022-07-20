@@ -27,7 +27,7 @@ def get_filters():
         if city in cities_:
                break 
         else:      
-            print('\nThe input you entered is not recognized (Please follow the HINT)\n')
+            print('\nThe input you entered is invalid (Please follow the HINT)\n')
    
     while True:
         #creating a list of months
@@ -38,7 +38,7 @@ def get_filters():
         if month in months_:
             break    
         else:       
-            print('\nThe input you entered is not recognized (Please follow the HINT)\n')
+            print('\nThe input you entered is invalid (Please follow the HINT)\n')
     while True:
         #creating a list of days
         days_ = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday','all']
@@ -48,7 +48,7 @@ def get_filters():
         if day in days_:
             break
         else:       
-            print('\nThe input you entered is not recognized (Please follow the HINT)\n')
+            print('\nThe input you entered is invalid(Please follow the HINT)\n')
 
     return city, month, day
 
