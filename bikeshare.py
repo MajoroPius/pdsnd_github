@@ -206,12 +206,20 @@ def display_info(df):
         #creating a list of answers
         answer_=['yes','no']
         #accepting user input
+<<<<<<< HEAD
         action_1= input("Do you want to display atleast 7 entries of our individual trip information? (HINT:Type 'yes' or 'no'): ").lower()
+=======
+        action_1= input("Do you want to display atleast 3 entries of our individual trip information? (HINT:Type 'yes' or 'no'): ").lower()
+>>>>>>> documentation
         #Condition to locate the information to be displayed
         if action_1 in answer_:
             if action_1=='yes':
                 start=0
+<<<<<<< HEAD
                 end=7
+=======
+                end=3
+>>>>>>> documentation
                 info_ = df.iloc[start:end,:9]
                 print(info_)
             break     
@@ -224,8 +232,13 @@ def display_info(df):
                 #condition to locate more information to be displayed
                 if action_2 in answer_:
                     if action_2=='yes':
+<<<<<<< HEAD
                         start+=7
                         end+=7
+=======
+                        start+=3
+                        end+=3
+>>>>>>> documentation
                         info_ = df.iloc[start:end,:9]
                         print(info_)
                     else:    
